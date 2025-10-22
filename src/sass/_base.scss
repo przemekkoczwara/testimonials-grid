@@ -15,13 +15,11 @@ html {
 // typography
 
 .barlow-semi-condensed-medium {
-  font-family: 'Barlow Semi Condensed', sans-serif;
-  font-weight: 500;
-  font-style: normal;
+  font-family: vars.$font-main;
+  font-weight: vars.$font-weight-medium;
 }
 
 .barlow-semi-condensed-semibold {
-  font-family: 'Barlow Semi Condensed', sans-serif;
-  font-weight: 600;
-  font-style: normal;
+  font-family: vars.$font-main;
+  font-weight: vars.$font-weight-semibold;
 }
