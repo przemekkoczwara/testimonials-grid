@@ -1,5 +1,5 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  base: '/testimonials-grid-sections/',
+  base: '/testimonials-grid-section/',
 });
