@@ -14,12 +14,21 @@ html {
 
 // typography
 
-.barlow-semi-condensed-medium {
+.barlow-medium {
   font-family: vars.$font-main;
   font-weight: vars.$font-weight-medium;
 }
 
-.barlow-semi-condensed-semibold {
+.barlow-semibold {
   font-family: vars.$font-main;
   font-weight: vars.$font-weight-semibold;
+}
+
+.container {
+  background-color: vars.$grey-100;
+  min-height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

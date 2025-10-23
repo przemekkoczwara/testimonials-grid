@@ -1,0 +1,110 @@
+@use 'variables' as vars;
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0 auto;
+  padding: 2rem;
+  max-width: 85.692rem; /// 1114px
+  gap: 2rem;
+}
+
+.card {
+  padding: vars.$spacing-32;
+  border-radius: vars.$spacing-8;
+  box-shadow: 40px 60px 50px -47px #48556a;
+
+  .card__header {
+    display: flex;
+    margin-bottom: vars.$spacing-16;
+    gap: vars.$spacing-16;
+
+    .card__avatar img {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+    }
+
+    .card__name {
+      font-size: vars.$font-size-13;
+      line-height: vars.$line-height-110;
+      color: vars.$white;
+    }
+    .card__status {
+      font-size: vars.$font-size-11;
+      line-height: vars.$line-height-110;
+      color: vars.$purple-50;
+    }
+  }
+
+  .card__title {
+    font-size: vars.$font-size-20;
+    line-height: vars.$line-height-120;
+    margin-bottom: vars.$spacing-16;
+    color: vars.$white;
+  }
+  .card__text {
+    line-height: vars.$line-height-140;
+    color: vars.$white;
+  }
+}
+
+.card-1 {
+  background-color: vars.$purple-500;
+
+  .card__avatar img {
+    border: 2px solid vars.$purple-300;
+  }
+  .card__text {
+    color: vars.$purple-50;
+  }
+}
+.card-2 {
+  background-color: vars.$grey-500;
+
+  .card__status {
+    color: vars.$grey-300;
+  }
+  .card__text {
+    color: vars.$grey-100;
+  }
+}
+
+//  specificity!!!
+
+.card.card-3 .card__name,
+.card.card-3 .card__title,
+.card.card-5 .card__name,
+.card.card-5 .card__title {
+  color: vars.$grey-500;
+}
+
+.card.card-3 .card__status,
+.card.card-3 .card__text,
+.card.card-5 .card__status,
+.card.card-5 .card__text {
+  color: vars.$grey-400;
+}
+
+.card-3,
+.card-5 {
+  background-color: vars.$white;
+}
+.card-4 {
+  background-color: vars.$dark-blue;
+
+  .card__avatar img {
+    border: 2px solid vars.$purple-500;
+  }
+}
+//  specificity!!!
+
+.card.card-4 .card__status {
+  color: vars.$white;
+}
+.card.card-4 .card__title {
+  color: vars.$grey-200;
+}
+.card.card-4 .card__text {
+  color: vars.$grey-100;
+}
